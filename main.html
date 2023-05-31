@@ -5,8 +5,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>What note is this&quest;</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <h1>what note is this?</h1>
+    <div id="main_container">
+        <button type="button" onclick="generateRandomNote()" id="generate_note_button"></button>
+    </div>
+    <div id="notes_container">
+        <div>
+            <button class="sharp notes" type="button" id="c_sharp" onclick="guessNote(this)">C&num;</button>
+            <button class="sharp notes" type="button" id="d_sharp" onclick="guessNote(this)">D&num;</button>
+            <button class="sharp notes" type="button" style="visibility:hidden">hidden</button>
+            <button class="sharp notes" type="button" id="f_sharp" onclick="guessNote(this)">F&num;</button>
+            <button class="sharp notes" type="button" id="g_sharp" onclick="guessNote(this)">G&num;</button>
+            <button class="sharp notes" type="button" id="a_sharp" onclick="guessNote(this)">A&num;</button>
+        </div>
+        <div>
+            <button class="natural notes" type="button" id="c" onclick="guessNote(this)">C</button>
+            <button class="natural notes" type="button" id="d" onclick="guessNote(this)">D</button>
+            <button class="natural notes" type="button" id="e" onclick="guessNote(this)">E</button>
+            <button class="natural notes" type="button" id="f" onclick="guessNote(this)">F</button>
+            <button class="natural notes" type="button" id="g" onclick="guessNote(this)">G</button>
+            <button class="natural notes" type="button" id="a" onclick="guessNote(this)">A</button>       
+            <button class="natural notes" type="button" id="b" onclick="guessNote(this)">B</button>
+        </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
